@@ -6,4 +6,6 @@ def get_change(amount)
 		change
 	end
 	change
+	if amount 
+
 end

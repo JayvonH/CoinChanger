@@ -7,7 +7,7 @@ class TestCoinchanger < Minitest::Test
 		result = get_change(0)
 		assert_equal({}, result)
 	end
-	
+
 	def test_pass_one_cent_returns_hash_with_one_penny
 		result = get_change(1)
 		assert_equal({penny: 1}, result)
