@@ -11,12 +11,12 @@
 
 	def test_pass_five_cents_returns_one_nickel
 		result = get_change(5)
-		assert_equal({nickel: 5},result)
+		assert_equal({nickel: 1},result)
 	end
 
 	def test_pass_six_cents_returns_hash_with_one_nickel_and_penny
 		result = get_change(6)
-		assert_equal({:nickel =>5, :penny =>1}, result)
+		assert_equal({:nickel =>, :penny =>1}, result)
 	end
 
 	def test_pass_seven_cents_returns_two_pennies_one_nickel

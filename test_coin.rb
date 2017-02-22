@@ -12,4 +12,9 @@ class TestCoinchanger < Minitest::Test
 		result = get_change(1)
 		assert_equal({penny: 1}, result)
 	end
+	def test_pass_five_cents_returns_one_nickel
+		result = get_change(5)
+		assert_equal({nickel: 1},result)
+	end
+
 end
