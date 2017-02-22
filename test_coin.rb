@@ -29,4 +29,8 @@ class TestCoinchanger < Minitest::Test
 		result = get_change(10)
 		assert_equal({:dime => 1}, result)
 	end
+	def test_pass_twenty_five_cents_returns_one_quarter
+		result = get_change(25)
+		assert_equal({:quarter => 1}, result)
+	end
 end

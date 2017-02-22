@@ -1,6 +1,8 @@
 def get_change(amount)
 	change = {}
-	if amount == 10
+	if amount == 25
+		change [:quarter] = 1
+	elsif amount == 10
 		change [:dime] = 1
 	elsif amount > 5
 	change [:nickel] = 1
