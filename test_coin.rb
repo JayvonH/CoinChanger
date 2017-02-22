@@ -21,4 +21,8 @@ class TestCoinchanger < Minitest::Test
 		result = get_change(6)
 		assert_equal({:nickel =>1, :penny =>1}, result)
 	end
+	def test_pass_seven_cents_returns_hash_with_one_nickel_and_two_pennies
+		result = get_change(7)
+		assert_equal({:nickel =>1, :penny =>2}, result)
+	end
 end
